@@ -6,7 +6,17 @@
     android:layout_height="match_parent"
     android:layout_alignWithParentIfMissing="false"
     tools:context=".MainActivity">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textSize="32dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:layout_above="@id/result_text"
+        android:id="@+id/solution_text"
+        android:layout_margin="16dp"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -16,6 +26,8 @@
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:layout_above="@id/buttons_layout"
+        android:id="@+id/result_text"
+        android:layout_margin="16dp"
         />
     <!--    Nesteamos los layouts-->
     <LinearLayout
